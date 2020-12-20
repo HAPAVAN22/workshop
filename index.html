@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin-left: 40%;background-color: rgb(245, 245, 115);">
+    <h1 style="color: seagreen;margin-left: 4%;">CALCULATOR</h1><br>
+    <input style="height: 35px;width: 170px" type="number" placeholder="First number" id="fno"><br><br>
+    <input style="height: 35px;width: 170px" type="number" placeholder="Second number" id="sno"><br>
+    <h2 id="do" style="font-size: large;font-style: italic;">Result: </h2><br>
+    
+    
+    <button style="width: 60px;height: 30px;;" onclick="sum()">Add</button>
+    <button style="width: 60px;height: 30px;margin-left: 3%;" onclick="subtract()">Subtract</button>
+    <button style="width: 60px;height: 30px;margin-left: 3%;" onclick="multiply()">Multiply</button>
+    <button style="width: 60px;height: 30px;margin-left: 3%;" onclick="divide()">Divide</button>
+</body>
+<script>
+    function sum()
+    {
+        
+        var fno=document.getElementById("fno").value;
+        var sno=document.getElementById("sno").value;
+        document.getElementById('do').innerText=Number(fno)+Number(sno);
+    }
+    function subtract()
+    {
+        
+        var fno=document.getElementById("fno").value;
+        var sno=document.getElementById("sno").value;
+        document.getElementById('do').innerText=Number(fno)-Number(sno);
+    }
+    function multiply()
+    {
+        
+        var fno=document.getElementById("fno").value;
+        var sno=document.getElementById("sno").value;
+        document.getElementById('do').innerText=Number(fno)*Number(sno);
+    }
+    function divide()
+    {
+        
+        var fno=document.getElementById("fno").value;
+        var sno=document.getElementById("sno").value;
+        document.getElementById('do').innerText=Number(fno)/Number(sno);
+    }
+
+</script>
+</html>
